@@ -1,0 +1,45 @@
+solid pyramid_001
+color 0.000000 0.000000 1.000000
+facet normal 0.000000 0.000000 1.000000
+		outer loop
+			vertex 0.000000 0.000000 0.000000
+			vertex 0.707107 0.707107 0.000000
+			vertex -0.965926 0.258819 0.000000
+		end loop
+	endfacet
+facet normal -1.344864 5.019097 0.866025
+		outer loop
+			vertex 0.707107 0.707107 0.000000
+			vertex -0.965926 0.258819 0.000000
+			vertex 0.000000 0.000000 3.000000
+		end loop
+	endfacet
+facet normal 0.000000 0.000000 1.000000
+		outer loop
+			vertex 0.000000 0.000000 0.000000
+			vertex -0.965926 0.258819 0.000000
+			vertex 0.258819 -0.965926 0.000000
+		end loop
+	endfacet
+facet normal -3.674234 -3.674235 0.866026
+		outer loop
+			vertex -0.965926 0.258819 0.000000
+			vertex 0.258819 -0.965926 0.000000
+			vertex 0.000000 0.000000 3.000000
+		end loop
+	endfacet
+facet normal 0.000000 0.000000 1.000000
+		outer loop
+			vertex 0.000000 0.000000 0.000000
+			vertex 0.258819 -0.965926 0.000000
+			vertex 0.707107 0.707107 0.000000
+		end loop
+	endfacet
+facet normal 5.019098 -1.344863 0.866025
+		outer loop
+			vertex 0.258819 -0.965926 0.000000
+			vertex 0.707107 0.707107 0.000000
+			vertex 0.000000 0.000000 3.000000
+		end loop
+	endfacet
+endsolid pyramid_001
