@@ -45,27 +45,27 @@ def rotateGeometry( file_content, axys, angle_deg )
 			text += "\n"
 			break
 		elsif this_line.include? "vertex"
-				a = this_line.chomp.split
-				vertex[0] = a[1].to_f
-				vertex[1] = a[2].to_f
-				vertex[2] = a[3].to_f
-				if axys == "x"
-					vertex_rotated = Roto.rotateX( vertex, angle_deg )
-				elsif axys == "y"
-					vertex_rotated = Roto.rotateY( vertex, angle_deg )
-				else
-					vertex_rotated = Roto.rotateZ( vertex, angle_deg )
-				end
-				#
-				triangle.push( vertex_rotated )
-				i += 1
-				#
-				if i == 3
-					normal = computeNormal( triangle )
-					text += facetBlock( normal, triangle )
-					triangle = []
-					i = 0
-				end
+			a = this_line.chomp.split
+			vertex[0] = a[1].to_f
+			vertex[1] = a[2].to_f
+			vertex[2] = a[3].to_f
+			if axys == "x"
+				vertex_rotated = Roto.rotateX( vertex, angle_deg )
+			elsif axys == "y"
+				vertex_rotated = Roto.rotateY( vertex, angle_deg )
+			else
+				vertex_rotated = Roto.rotateZ( vertex, angle_deg )
+			end
+			#
+			triangle.push( vertex_rotated )
+			i += 1
+			#
+			if i == 3
+				normal = computeNormal( triangle )
+				text += facetBlock( normal, triangle )
+				triangle = []
+				i = 0
+			end
 		elsif this_line.include? "normal"
 			pass
 		elsif this_line.include? "color"
