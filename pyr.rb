@@ -88,7 +88,7 @@ angle_deg = 90
 axys_of_rotation = "x"
 #
 file_content = open( file_name )
-text = rotateGeometry( file_content, "x", angle_deg )
+text = rotateGeometry( file_content, axys_of_rotation, angle_deg )
 saveToFile( text, transformed_file_name , "w" )
 
 
